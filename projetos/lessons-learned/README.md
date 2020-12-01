@@ -1,6 +1,6 @@
 # Boas vindas ao repositório do projeto Lições Aprendidas!
 
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #VQV 🚀
+<!-- Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #VQV 🚀
 
 Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma `branch` específica e um _Pull Request_ para colocar seus códigos.
 
@@ -114,10 +114,10 @@ O não cumprimento de um requisito, total ou parcialmente, impactará em sua ava
 * Contudo, tenha em mente que **nada além do que for pedido nos requisitos será avaliado**. _Esta é uma oportunidade de você exercitar sua criatividade e experimentar com os conhecimentos adquiridos._
 
 ---
-
+ -->
 ## Requisitos Obrigatórios:
 
-Você deve criar um site que com uma série de informações a respeito do que você aprendeu nos últimos três blocos, estilizado de forma apropriada.
+Você deve criar um site que tenha uma série de informações a respeito do que você aprendeu nos últimos três blocos, estilizado de forma apropriada.
 
 **Em outras palavras, uma página de `Lessons Learned`**;
 
@@ -219,7 +219,7 @@ Você deve criar um site que com uma série de informações a respeito do que v
 
 ---
 
-## Dicas
+<!-- ## Dicas
 
 - Para fazer este projeto você deverá atribuir a barra superior o `position: fixed;`. Leia mais sobre ele [aqui](https://www.w3schools.com/css/css_positioning.asp).
 
@@ -268,5 +268,5 @@ Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362
 ### REVISANDO UM PULL REQUEST
 
 Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
-
+ -->
 #VQV 🚀
