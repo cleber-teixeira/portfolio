@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Italianno&family=Red+Hat+Text&display=swap');
+
+a {
+  color: #73683B;
+}
+
+.ass {
+  font-family: Italianno;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+}
+
+body {
+  background-color: rgb(242, 249, 255);
+  color: #583E23;
+  font-family: 'Red Hat Text';
+  margin: 0;
+  max-width: 1366px;
+}
+
+.cleber {
+  border: solid 5px rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  box-shadow: 1px 1px 7px #638594;
+  margin-left: 20px;
+}
+
+.container {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+div ul {
+  list-style-type: none;
+}
+
+h1 {
+  color: #13262F;
+  font-family: Italianno;
+  font-size: 50px;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  margin: 5px 0 5px 70px;
+}
+
+.indice {
+  align-content: center;
+  display: inline-table;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.indice li {
+  display: inline;
+  margin: 2px 5px;
+  width: 150px;
+}
+
+.inicio {
+  color: #B0A084;
+  font-family: 'Della Respira';
+  letter-spacing: 2px;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.menu {
+  background-color: rgba(19, 38, 47, 0.1);
+  box-shadow: 1px 5px 5px rgba(19, 38, 47, 0.3);
+  margin-left: 0;
+  padding: 3px 0;
+  text-align: center;
+  width: 100%;
+}
+
+ol {
+  list-style: decimal-leading-zero;
+}
+
+.seta {
+  display: inline-block;
+  font-weight: bolder;
+  left: 1250px;
+  position: fixed;
+  text-align: center;
+  top: 5px;
+}
+
+span {
+  font-weight: 600;
+}
+
+.t-indice {
+  display: none;
+}
+
+.t1 {
+  font-size: 16px;
+}
+
+.t2 {
+  font-size: 14px;
+}
+
+.t3 {
+  font-size: 12px;
+}
+
+.text {
+  font-size: 10px;
+}
