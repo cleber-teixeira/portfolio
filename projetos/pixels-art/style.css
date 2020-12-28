@@ -2,18 +2,7 @@
   font-size: 2.2vh;
   height: 65%;
   padding-left: 3px;
-  width: 5%;
-}
-
-html , body {
-  background-attachment: fixed;
-  background-image: url('bkg.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: sans-serif;
-  height: 100%;
-  margin: 0;
-  text-align: center;
+  width: 6%;
 }
 
 .buttons {
@@ -82,6 +71,17 @@ h1 {
   margin: 5px auto;
   padding-right: 5px;
   text-shadow: 1px 1px 5px white, 0 0 0.5em white;
+}
+
+html , body {
+  background-attachment: fixed;
+  background-image: url('bkg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  text-align: center;
 }
 
 .line {
