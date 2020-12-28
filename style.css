@@ -4,6 +4,20 @@ a {
   color: #73683B;
 }
 
+.arrow {
+  display: inline-block;
+  font-weight: bolder;
+  right: 2%;
+  position: fixed;
+  text-align: center;
+  top: 14%;
+}
+
+.arrow ul {
+  list-style: none;
+  line-height: 15px;
+}
+
 .ass {
   font-family: Italianno;
   font-weight: lighter;
@@ -14,36 +28,37 @@ body {
   background-color: rgb(242, 249, 255);
   color: #583E23;
   font-family: 'Red Hat Text';
-  margin: 0;
-  max-width: 1366px;
-}
-
-.cleber {
-  border: solid 5px rgba(255, 255, 255, 0.4);
-  border-radius: 30px;
-  box-shadow: 1px 1px 7px #638594;
-  margin-left: 20px;
+  margin-left: 0;
+  margin-top: 0;
 }
 
 .container {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   margin-left: 10px;
 }
 
-div ul {
-  list-style-type: none;
+footer {
+  background-color: rgb(6, 45, 80);
+  bottom: 0;
+  color: rgb(250, 250, 250);
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
 }
 
-h1 {
-  color: #13262F;
-  font-family: Italianno;
-  font-size: 50px;
-  font-weight: lighter;
-  letter-spacing: 0.5px;
-  margin: 5px 0 5px 70px;
+h3 {
+  margin-bottom: 5px;
 }
 
-.indice {
+h4 {
+  margin-bottom: 5px;
+}
+
+.index {
   align-content: center;
   display: inline-table;
   list-style: none;
@@ -52,47 +67,63 @@ h1 {
   width: auto;
 }
 
-.indice li {
+.index li {
   display: inline;
-  margin: 2px 5px;
+  margin: 2px 15px;
   width: 150px;
 }
 
-.inicio {
-  color: #B0A084;
-  font-family: 'Della Respira';
-  letter-spacing: 2px;
-  margin: 5px auto;
-  text-align: center;
-}
-
 .menu {
-  background-color: rgba(19, 38, 47, 0.1);
+  background-color: rgb(250, 250, 250);
   box-shadow: 1px 5px 5px rgba(19, 38, 47, 0.3);
+  font-size: 18px;
   margin-left: 0;
-  padding: 3px 0;
+  padding-bottom: 5px;
+  padding-top: 3px;
+  position: fixed;
   text-align: center;
+  top: 44px;
   width: 100%;
 }
 
-ol {
-  list-style: decimal-leading-zero;
+.name {
+  color: #13262F;
+  font-family: Italianno;
+  font-size: 50px;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  margin: 55px 0 5px 70px;
+  margin-top: 53px;
 }
 
-.seta {
-  display: inline-block;
-  font-weight: bolder;
-  left: 1250px;
-  position: fixed;
-  text-align: center;
-  top: 5px;
+ol {
+  line-height: 25px;
+  list-style: decimal-leading-zero;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.photo {
+  border: solid 5px rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  box-shadow: 1px 1px 7px #638594;
+  margin-left: 20px;
+}
+
+.projects {
+  font-weight: bold;
+  line-height: 30px;
 }
 
 span {
   font-weight: 600;
 }
 
-.t-indice {
+.start {
+  color: rgb(242, 249, 255);
+}
+
+.t-index {
   display: none;
 }
 
@@ -110,4 +141,24 @@ span {
 
 .text {
   font-size: 10px;
+}
+
+.title {
+  background-color: rgb(6, 45, 80);
+  color: #B0A084;
+  font-family: 'Della Respira';
+  letter-spacing: 2px;
+  margin-top: 0;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+ul {
+  margin-bottom: 50px;
+  margin-top: 0;
+  line-height: 30px;
 }
