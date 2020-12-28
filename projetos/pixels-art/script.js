@@ -137,7 +137,7 @@ function resizeBoard() {
     const inputValue = document.querySelector('#board-size').value;
     const board = document.querySelector('#pixel-board');
     if (inputValue === '' || inputValue < 1) {
-      alert('Board inválido!');
+      alert('Tamanho inválido!');
     } else {
       board.remove();
       pixelFrame(inputValue);
