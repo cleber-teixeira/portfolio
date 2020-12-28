@@ -180,7 +180,6 @@ window.onload = function () {
   selectColor('color0');
   createButton('VQV', 'generate-board', 'controls');
   createButton('Limpar', 'clear-board', 'controls');
-  /*createButton('- Zoom', 'zoom-out', 'controls');*/
   pixelFrame(5);
   resizeBoard();
   colorFill();
