@@ -1,7 +1,9 @@
 # Portfólio ![](/imagens/port.png)
-> Link para o Portfólio: [https://cleber-teixeira.github.io](https://cleber-teixeira.github.io/){:target="_blank"}
+> Link para o Portfólio: [https://cleber-teixeira.github.io](https://cleber-teixeira.github.io/)
 
 ### Projetos:
 1. :books: [Lessons Learned](https://cleber-teixeira.github.io/projetos/lessons-learned/) 
 2. :art: [Pixels Art](https://cleber-teixeira.github.io/projetos/pixels-art/) 
 3. :memo: [To Do List](https://cleber-teixeira.github.io/projetos/todo-list/) 
+
+_**Obs.:** Para abrir um link em uma nova guia, pressione a tecla **Ctrl** e clique sobre o link._
