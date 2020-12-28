@@ -3,48 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="/imagens/port.png">
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="style.css">
     <title>Portfólio - Cleber Teixeira</title>
 </head>
 <body>
-    <h2 id="inicio" class="inicio">PORTFÓLIO</h2>
-      
-    <h3 class="t-indice">Índice:</h3>
-    
+    <h2 id="title" class="title">PORTFÓLIO</h2>
+    <h3 id="t-index" class="t-index">Menu:</h3>
     <div class="menu">
-        <ol id="indice" class="indice">
-            <li><a href="#sobre">Sobre mim</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
+        <ol id="index" class="index">
+            <li><a href="#photo">Sobre mim</a></li>
+            <li><a href="#aux">Habilidades</a></li>
+            <li><a href="#project">Projetos</a></li>
             <li><a href="#links">Links</a></li>
         </ol>
     </div>
-
-    <h1>Cleber Lopes Teixeira</h1>
-    
-    <img id="cleber" class="cleber" src="/imagens/cleber_judo.png" alt="Cleber com parte da Equipe de Judô Pacheco (antes da Pandemia =[ )" width="400px"> <br>
-    
+    <p id="start" class="start">inicio</p>
+    <h1 id="name" class="name">Cleber Lopes Teixeira</h1>
+    <img id="photo" class="photo" src="/imagens/cleber_judo.png" alt="Cleber com parte da Equipe de Judô Pacheco (antes da Pandemia =[ )" width="400px"> <br>
     <div class="container">
-        <h3 id="sobre">Sobre mim:</h3>
-        
+        <h3 id="about" class="about">Sobre mim:</h3>
         - Natural de: <span>Fortaleza-CE</span> <br>
         - Moro em: <span>São Paulo-SP</span> <br>
-        
-        
         <p>
-        Sou apaixonado por <span><em>tecnologia</em></span>, música, natureza e <span>esportes</span> (principalmente <span><em>artes-marciais</em></span>). <br>
-        Atualmente sou aluno do curso de <span>Desenvolvimento Web Full Stack da <a href="https://www.betrybe.com/" target="_blank" >Trybe</a> - <em>Turma 09</em>.</span> <br>
-        Estou me preparando para ser um profissional exemplar e <em>fazer a diferença na vida das pessoas!</em>
+            Sou apaixonado por <span><em>tecnologia</em></span>, música, natureza e <span>esportes</span> (principalmente <span><em>artes-marciais</em></span>). <br>
+            Atualmente sou aluno do curso de <span>Desenvolvimento Web Full Stack da <a href="https://www.betrybe.com/" target="_blank" >Trybe</a> - <em>Turma 09</em>.</span> <br>
+            Estou me preparando para ser um profissional exemplar e <em>fazer a diferença na vida das pessoas!</em>
         </p>
-
-        <h4>Já atuei como:</h4>
+        <h4 id="job">Já atuei como:</h4>
         <ul>
             <li>Téc. Montagem e Manutenção de Micro</li>
             <li>Professor de Informática</li>
             <li>Professor de Judô</li>
-            <li>Professor de Massagem</li>
+            <li id="aux">Professor de Massagem</li>
         </ul>
-
-        <h3 id="habilidades">Habilidades Interpessoais:</h3>
+        <h3 id="soft-skills">Habilidades Interpessoais:</h3>
         <ul>
             <li><span><em>Trabalhar em equipe</em></span></li>
             <li><span><em>Saber ouvir os outros</em></span></li>
@@ -52,10 +44,8 @@
             <li><span><em>Ensinar o que sabe</em></span></li>
             <li><span><em>Ser prestativo</em></span></li>
         </ul>
-
         <h3>Habilidades Técnicas</h3>
-        
-        <ol class="tecnicas">
+        <ol class="hard-skills">
             <li class="t1"><span><em>Unix</em></span></li>
             <li class="t1"><span><em>Git</em></span></li>
             <li class="t1"><span><em>GitHub</em></span></li>
@@ -66,26 +56,29 @@
             <li class="t3">Pacote Office</li>
             <li class="t3">Internet</li>
             <li class="t3">Digitação</li>
-
         </ol>
-
-        <p>&rarr; <em><a href="#cleber">Este sou eu com alguns dos meus alunos de Judô. (antes da 'Pandemia'...)</a></em></p>
-
+        <h3 id="project">Projetos</h3>
+        <ol class="projects">
+            <li><a href="https://cleber-teixeira.github.io/projetos/lessons-learned/" target="_blank">Lessons Learned</a></li>
+            <li><a href="https://cleber-teixeira.github.io/projetos/pixels-art/" target="_blank">Pixels Art</a></li>
+            <li><a href="https://cleber-teixeira.github.io/projetos/todo-list/" target="_blank">To Do List</a></li>
+        </ol>
+        <p>&rarr; <em><a href="#name">Este sou eu com alguns dos meus alunos de Judô. (antes da 'Pandemia'...)</a></em></p>
         <h3 id="links">Links Interessantes:</h3>
-
         <ul>
-            <li><a href="https://blog.betrybe.com/" target="_blank" >Blog da Trybe</a></li> <br>
-            <li><a href="http://www.judopacheco.com.br/" target="_blank">Site da EJP (Equipe de Judô Pacheco)</a><em><span class="ass"> by Cleber Teixeira</span></em></li> <br>
-            <li><a href="http://www.thaizen.com.br/" target="_blank">Site Thai Zen - Thai Yoga Massagem</a><em><span class="ass"> by Cleber Teixeira</span></em></li> <br>
+            <li><a href="https://blog.betrybe.com/" target="_blank" >Blog da Trybe</a></li>
+            <li><a href="http://www.judopacheco.com.br/" target="_blank">Site da EJP (Equipe de Judô Pacheco)</a><em><span class="ass"> by Cleber Teixeira</span></em></li>
+            <li><a href="http://www.thaizen.com.br/" target="_blank">Site Thai Zen - Thai Yoga Massagem</a><em><span class="ass"> by Cleber Teixeira</span></em></li>
         </ul>
         <em><span>Obs.:</span> Estes dois últimos sites eu elaborei com poucos conhecimentos Web e terei a <br>
         oportunidade de realizar melhorias com os conhecimentos adquiridos na Trybe.</em>
     </div>
-    <div id="seta" class="seta">
+    <div id="arrow" class="arrow">
         <ul>
-            <li><a href="#inicio">&uarr;</a></li>
+            <li><a href="#start">&uarr;</a></li>
             <li class="text">Início</li>
         </ul>
     </div>
+    <footer>Criado por: Cleber Lopes Teixeira - Estudante do curso de 'Desenvolvimento Web - Full Stack' | Trybe 🚀 - Turma 09 - 2020 ©️</footer>
 </body>
 </html>
