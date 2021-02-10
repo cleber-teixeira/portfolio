@@ -28,6 +28,21 @@ function paletteColor() {
   }
 }
 
+// Cria seletor de cores
+function inputColor() {
+  const palette = document.querySelector('#color-palette');
+  const colorLabel = document.createElement('label');
+  colorLabel.id = 'c-label';
+  colorLabel.classList.add('c-label');
+  colorLabel.innerText = 'Selecione uma cor';
+  const colorInput = document.createElement('input');
+  colorInput.id = 'c-input';
+  colorInput.classList.add('c-input');
+  colorInput.type = 'color';
+  palette.appendChild(colorLabel);
+  palette.appendChild(colorInput);
+}
+
 // Dimensiona div's pixel
 function pixelSize(size, element) {
   switch (size) {
@@ -119,6 +134,18 @@ function colorFill() {
   });
 }
 
+// Preenche cor 2
+function fillColor() {
+  const pixelBoard = document.querySelector('#pixel-board');
+  pixelBoard.addEventListener('click', function (event) {
+    const pixelSelect = event.target;
+    const color = document.querySelector('#c-input').value;
+    if (pixelSelect.className === 'pixel') {
+      pixelSelect.style.backgroundColor = color;
+    }
+  });
+}
+
 // 09- Apaga quadro
 function clearBoard() {
   const buttonClear = document.querySelector('.clear-board');
@@ -141,7 +168,7 @@ function resizeBoard() {
     } else {
       board.remove();
       pixelFrame(inputValue);
-      colorFill();
+      fillColor();
     }
   });
 }
@@ -176,13 +203,14 @@ function createFooter() {
 }
 
 window.onload = function () {
-  paletteColor();
-  selectColor('color0');
+  // paletteColor();
+  inputColor();
+  // selectColor('color0');
   createButton('VQV', 'generate-board', 'controls');
   createButton('Limpar', 'clear-board', 'controls');
   pixelFrame(5);
   resizeBoard();
-  colorFill();
+  fillColor();
   clearBoard();
   clicSelectColor();
   createFooter();

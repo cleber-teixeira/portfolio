@@ -2,7 +2,7 @@
   font-size: 2.2vh;
   height: 65%;
   padding-left: 3px;
-  width: 6%;
+  width: 70px;
 }
 
 .buttons {
@@ -12,6 +12,19 @@
   margin-bottom: 10%;
   margin-left: 10px;
   margin-top: 0.6%;
+}
+
+.c-input {
+  border-radius: 7px;
+  height: 2.5vh;
+  width: 2.5vh;
+}
+
+.c-label {
+  font-size: 2.5vh;
+  color: white;
+  text-shadow: 0 0 5px rgb(35, 92, 112);
+  margin-right: 10px;
 }
 
 .circle {
