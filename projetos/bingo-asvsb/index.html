@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="ico.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Bingo A.S.V.S.B.</title>
+</head>
+<body>
+  <header>
+    <div id="logo" class="logo">
+      <img src="bingo.png" alt="bingo-marfisas" class="logo-bingo">
+    </div>
+    <div id="infos" class="infos">
+      <table id="infos-table" class="infos-table">
+        <thead>
+          <th></th>
+          <th>Nº Rodada</th>
+          <th>Valor</th>
+        </thead>
+        <tr>
+          <td class="null"></td>
+          <td id="rodada" class="rodada"></td>
+          <td id="valor" class="valor"></td>
+        </tr>
+        <thead>
+          <th class="part">Prêmio(s)</th>
+          <td id="premio" class="premios" colspan="2"></td>
+        </thead>
+        <thead>
+          <th class="part">Ganhador(a):</th>
+          <td id="ganhador" class="ganhador" colspan="2"></td>
+        </thead>
+      </table>
+      <div class="font">
+        <h1>Ass. Saber Viver Sempre Bem</h1>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="bolinhas" class="bolinhas">
+      <div id="sorteio" class="sorteio">
+        <div class="base-letra">
+          <div id="letra" class="letra"></div>
+        </div>
+        <div class="base-sorteado">
+          <div id="sorteado" class="sorteado"><h1></h1></div>
+        </div>
+      </div>
+      <div class="controls">
+        <div id="menu" class="menu">
+          <button id="eletronico" class="btn-eletronico btn">
+            Sorteio Eletrônico
+          </button>
+          <button id="bingo" class="btn">BINGO</button>
+          <button id="btn-ganhador" class="btn">Ganhador</button><br/>
+          <input type="text" id="input-bingo" class="input-bingo"><br/>
+          <button id="btn-sorteado" class="btn">Sorteado</button>
+          <button id="btn-rodada" class="btn">Rodada</button>
+          <button id="btn-valor" class="btn">Valor</button>
+          <button id="btn-premio" class="btn">Prêmio(s)</button>
+          <button id="btn-corrigir" class="btn">Corrigir</button>
+          <button id="btn-limpar" class="btn">Limpar</button>
+        </div>
+        <div class="logo2">
+          <img src="asvsb.jpg" alt="bingo-marfisas" class="logo-ong">
+        </div>
+      </div>
+    </section>
+    <section id="conteudo-cartela" class="conteudo-cartela">
+      <table id="cartela" class="cartela">
+        <thead>
+          <th class="title b"><h1>B</h1></th>
+          <th class="title i"><h1>I</h1></th>
+          <th class="title n"><h1>N</h1></th>
+          <th class="title g"><h1>G</h1></th>
+          <th class="title o"><h1>O</h1></th>
+        </thead>
+        <tr id="num" class="num">
+        <td>01</td><td>16</td><td>31</td><td>46</td><td>61</td>
+        </tr>
+        <tr id="num" class="num">
+          <td>02</td><td>17</td><td>32</td><td>47</td><td>62</td>
+        </tr>
+        <tr id="num" class="num">
+          <td>03</td><td>18</td><td>33</td><td>48</td><td>63</td>
+        </tr>
+        <tr id="num" class="num">
+          <td>04</td><td>19</td><td>34</td><td>49</td><td>64</td>
+        </tr>
+        <tr id="num" class="num">
+          <td>05</td><td>20</td><td>35</td><td>50</td><td>65</td>
+        </tr>
+        <tr id="num" class="num">
+          <td>06</td><td>21</td><td>36</td><td>51</td><td>66</td>
+        </tr>
+        <tr id="num" class="num">
+          <td>07</td><td>22</td><td>37</td><td>52</td><td>67</td>
+        </tr>
+        <tr id="num" class="num">
+          <td>08</td><td>23</td><td>38</td><td>53</td><td>68</td>
+        </tr>
+        <tr id="num" class="num">
+          <td>09</td><td>24</td><td>39</td><td>54</td><td>69</td>
+        </tr>
+        <tr id="num" class="num">
+          <td>10</td><td>25</td><td>40</td><td>55</td><td>70</td>
+        </tr>
+        <tr id="num" class="num">
+          <td>11</td><td>26</td><td>41</td><td>56</td><td>71</td>
+        </tr>
+        <tr id="num" class="num">
+          <td>12</td><td>27</td><td>42</td><td>57</td><td>72</td>
+        </tr>
+        <tr id="num" class="num">
+          <td>13</td><td>28</td><td>43</td><td>58</td><td>73</td>
+        </tr>
+        <tr id="num" class="num">
+          <td>14</td><td>29</td><td>44</td><td>59</td><td>74</td>
+        </tr>
+        <tr id="num" class="num">
+          <td>15</td><td>30</td><td>45</td><td>60</td><td>75</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+  <footer>
+    Desenvolvido por Cleber Teixeira | Portfólio: <a href="https://cleber-teixeira.github.io" target="_blank">cleber-teixeira.github.io</a> | Estudante de Desenvolvimento Web - Full Stack na <a href="http://betrybe.com" target="_blank">Trybe</a>
+  </footer>
+</body>
+</html>
