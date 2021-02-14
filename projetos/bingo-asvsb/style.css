@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+a {
+  color:whitesmoke;
+}
+
+.b{
+  background-color: rgba(0, 0, 255, 0.735);
+  color: white;
+}
+
+div.msg > .bingo {
+  border: 7px double;
+  color: rebeccapurple;
+  font-size: 70px;
+  padding: 5px 10px;
+  position: absolute;
+  right: 100px;
+  top: 270px;
+  transform: rotate(315deg);
+}
+
+body {
+  color: rgb(94, 94, 94);
+  font-family: sans-serif;
+  font-size: 1em;
+  margin: 0;
+  min-width: 780px;
+}
+
+.bolinhas {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.btn {
+  font-size: 14px;
+  height: 30px;
+  letter-spacing: 1px;
+  width: 85px;
+}
+
+.btn-eletronico {
+  margin-bottom: 10px;
+  width: 180px;
+}
+
+.btn:hover {
+  background-color: gray;
+  color: white;
+  font-weight: 600;
+  transition: 0.8s;
+}
+
+.cartela {
+  border: 1px solid gray;
+  border-radius: 15px;
+  border-spacing: 15px 4px;
+  margin: 0 auto;
+  padding: 15px 5px;
+}
+
+.conteudo-cartela {
+  width: 40%;
+}
+
+.controls {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0;
+  width: 100%;
+}
+
+.font {
+  margin-right: 1%;
+  text-align: center;
+  width: 45%;
+}
+
+footer {
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.3),rgba(0, 0, 0, 0.5),rgba(128, 128, 128, 0.3));
+  position: fixed;
+  bottom: 0;
+  color: whitesmoke;
+  font-size: 12px;
+  height: 20px;
+  padding: 4px 0 0;
+  text-align: center;
+  width: 60%;
+}
+
+.g {
+  background-color: rgba(0, 128, 0, 0.831);
+  color: white;
+}
+
+.ganhador {
+  font-size: 28px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.ganhador {
+  /* Chrome, Safari, Opera */
+ -webkit-animation: PULSE 2s infinite; 
+ 
+ /* Internet Explorer */
+ -ms-animation: PULSE 2s infinite;
+ 
+ /* Standard Syntax */
+ animation: PULSE 1.25s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes PULSE{
+  0%{color:rgba(242, 150, 22);}
+ 110%{color: black;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes PULSE{
+ 0%{color:rgba(128, 197, 25);}
+ 110%{color: black;}
+}
+
+/* Standard Syntax */
+@keyframes PULSE{
+ 0%{color:rgba(81,157,186);}
+ 105%{color: rgb(255, 0, 0);}
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.i {
+  background-color: rgba(255, 255, 0, 0.681);
+  color: black;
+}
+
+.infos {
+  display: flex;
+  height: 80px;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  width: 82%;
+}
+
+.infos h1 {
+  color: cadetblue;
+  font-family: 'Great Vibes';
+  font-size: 2.3em;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+.infos-table {
+  border-spacing: 10px 5px;
+  font-size: 16px;
+  text-align: center;
+  margin-left: -50px;
+  width: 55%;
+}
+
+.infos-table td {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.infos-table .null {
+  border: none;
+}
+
+.infos-table .part {
+  text-align: right;
+  width: 50px;
+}
+
+.input-bingo {
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  height: 25px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  text-align: center;
+  width: 70%;
+}
+
+div.base-letra {
+  padding-bottom: 30%;
+  position: relative;
+  width: 30%;
+}
+
+div.base-letra > .letra {
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 15px;
+  bottom: 0;
+  color: grey;
+  display: flex;
+  font-size: 29vh;
+  justify-content: center;
+  left: 0;
+  min-width: 135px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+div.base-sorteado {
+  padding-bottom: 31%;
+  position: relative;
+  width: 31%;
+}
+
+div.base-sorteado > .sorteado {
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 50%;
+  bottom: 0;
+  color: gray;
+  display: flex;
+  font-size: 25vh;
+  justify-content: center;
+  left: 0;
+  min-width: 193.5px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+.logo {
+  text-align: center;
+  width: 17%;
+}
+
+.logo2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+
+.logo-bingo {
+  margin-top: 5%;
+  width: 75%;
+}
+
+.logo-ong {
+  width: 60%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 70px;
+  width: 100%;
+}
+
+.menu {
+  text-align: center;
+  width: 75%;
+}
+
+.n {
+  background-color: rgba(0, 0, 0, 0.879);
+  color: white;
+}
+
+.no {
+  color: white;
+}
+
+.num td{
+  border: 1px solid grey;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 1px 10px;
+  text-align: center;
+}
+
+.o {
+  background-color: rgba(255, 0, 0, 0.77);
+  color: white;
+}
+
+.premios {
+  font-weight: 600;
+  width: 100%;
+}
+
+.rodada {
+  width: 50%;
+}
+
+.sorteio {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  justify-content: space-evenly;
+  margin-top: 80px;
+  width: 100%;
+}
+
+.title {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 70px;
+  text-align: center;
+  width: 70px;
+}
+
+.valor {
+  width: 50%;
+}
