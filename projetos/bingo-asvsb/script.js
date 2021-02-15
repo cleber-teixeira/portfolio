@@ -12,7 +12,7 @@ const sorteado = () => {
     const letra = document.querySelector('#letra');
     const sorteado = document.querySelector('#sorteado');
     let bolinha;
-    if (input.value < 10 && input.value !== 0 && input.value !== '') {
+    if (input.value.length === 1 && input.value !== '') {
       bolinha = `0${input.value}`;
     } else {
       bolinha = input.value;
@@ -51,7 +51,17 @@ const sorteado = () => {
 
 const aleatorio = () => {
   const btn = document.querySelector('#eletronico');
-  btn.addEventListener('click', sortear);
+  btn.addEventListener('click', () => {
+    const sorteado = document.querySelector('#sorteado');
+    const letra = document.querySelector('#letra');
+    const sorteando = document.querySelector('.sorteando');
+    const img = document.createElement('img');
+    sorteado.innerHTML = '<img src="sorteando.png" alt="sorteando" class="roleta"></img>';
+    letra.innerText = '⏳';
+    sorteando.innerText = 'Sorteando';
+    setTimeout(() => sorteando.innerText = '', 5000);
+    setTimeout(() => sortear(), 5000);
+  });
 }
 
 const sortear = () => {
