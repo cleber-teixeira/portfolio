@@ -78,7 +78,6 @@ body {
 
 footer {
   background-image: linear-gradient(to right, rgba(128, 128, 128, 0.3),rgba(0, 0, 0, 0.5),rgba(128, 128, 128, 0.3));
-  position: fixed;
   bottom: 0;
   border-radius: 5px;
   color: whitesmoke;
@@ -88,8 +87,9 @@ footer {
   margin-bottom: 2px;
   min-width: 467px;
   padding: 4px 0 0;
+  /* position: fixed; */
   text-align: center;
-  width: 60%;
+  width: 100%;
 }
 
 footer:hover {
@@ -105,7 +105,7 @@ footer:hover {
 .ganhador {
   font-size: 28px;
   font-weight: 600;
-  min-width: 280px;
+  min-width: 260px;
   width: 100%;
 }
 
