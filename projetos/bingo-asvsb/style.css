@@ -86,6 +86,7 @@ footer {
   height: 20px;
   margin-left: 2px;
   margin-bottom: 2px;
+  min-width: 467px;
   padding: 4px 0 0;
   text-align: center;
   width: 60%;
@@ -104,6 +105,7 @@ footer:hover {
 .ganhador {
   font-size: 28px;
   font-weight: 600;
+  min-width: 280px;
   width: 100%;
 }
 
