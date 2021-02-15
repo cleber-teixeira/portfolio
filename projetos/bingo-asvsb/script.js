@@ -14,6 +14,8 @@ const sorteado = () => {
     let bolinha;
     if (input.value.length === 1 && input.value !== '') {
       bolinha = `0${input.value}`;
+    } else if (input.value.length > 2) {
+      input.value = '';
     } else {
       bolinha = input.value;
     }
