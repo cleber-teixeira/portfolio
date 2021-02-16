@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 50px;
   margin-bottom: 2%;
   width: 100%;
 }
@@ -89,10 +89,10 @@ div.msg > .bingo {
   border: 7px double;
   color: rebeccapurple;
   font-size: 13vw;
-  left: 15%;
+  left: 13%;
   padding: 1vw 5vw;
   position: absolute;
-  top: 9em;
+  bottom: -75vw;
   transform: rotate(315deg);
 }
 
@@ -326,19 +326,19 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 2vw;
   width: 100%;
 }
 
 .sorteando {
+  align-self: center;
   border: 1px white;
   color: cadetblue;
   display: flex;
   font-size: 20px;
   height: 20px;
-  /* margin-bottom: 1.5vw; */
-  top: 150px;
+  top: 270px;
 }
 
 .title {
