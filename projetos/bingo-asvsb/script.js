@@ -125,7 +125,8 @@ const botao = (parametro) => {
   const btn = document.querySelector(`#btn-${parametro}`);
   btn.addEventListener('click', () => {
     if (param === 'valor') {
-      campo.innerText = parseFloat(input.value).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
+      newInput = input.value.replace(',', '.');
+      campo.innerText = parseFloat(newInput).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });;
       input.value = '';  
     } else {
       campo.innerText = input.value;
