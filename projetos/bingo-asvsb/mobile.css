@@ -29,10 +29,9 @@ body {
 }
 
 .btn {
-  font-size: 3vw;
-  height: 4.5vw;
+  font-size: 2.8vw;
   letter-spacing: 1px;
-  width: 15.7vw;
+  padding: 2px 2px;
 }
 
 .btn-eletronico {
@@ -49,7 +48,7 @@ body {
 }
 
 #btn-valor {
-  width: 11vw;
+  width: 10vw;
 }
 
 .btn:hover {
@@ -92,7 +91,7 @@ div.msg > .bingo {
   left: 13%;
   padding: 1vw 5vw;
   position: absolute;
-  bottom: -75vw;
+  top: 95%;
   transform: rotate(315deg);
 }
 
@@ -102,8 +101,8 @@ footer {
   color: whitesmoke;
   font-size: 1.7vw;
   height: 20px;
+  margin-top: 10px;
   padding: 4px 0 0;
-  position: relative;
   text-align: center;
   width: 100%;
 }
