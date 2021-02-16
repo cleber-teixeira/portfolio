@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" media="screen and (min-width: 817px)">
+  <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 816px)">
   <link rel="shortcut icon" href="ico.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
   <title>Bingo A.S.V.S.B.</title>
 </head>
@@ -27,7 +28,7 @@
           <td id="valor" class="valor"></td>
         </tr>
         <thead>
-          <th class="part">Prêmio(s)</th>
+          <th class="part">Prêmio(s):</th>
           <td id="premio" class="premios" colspan="2"></td>
         </thead>
         <thead>
@@ -39,14 +40,10 @@
   </header>
   <main>
     <section id="bolinhas" class="bolinhas">
+      <span class="sorteando"></span>
       <div id="sorteio" class="sorteio">
-        <div class="base-letra">
-          <div id="letra" class="letra"></div>
-        </div>
-        <span class="sorteando"></span>
-        <div class="base-sorteado">
-          <div id="sorteado" class="sorteado"><h1></h1></div>
-        </div>
+        <div id="letra" class="letra"></div>
+        <div id="sorteado" class="sorteado"><h1></h1></div>
       </div>
       <div class="controls">
         <div id="menu" class="menu">
