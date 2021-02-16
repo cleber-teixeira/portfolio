@@ -97,7 +97,7 @@ div.msg > .bingo {
 }
 
 footer {
-  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.3),rgba(0, 0, 0, 0.5),rgba(128, 128, 128, 0.3));
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.5),rgba(0, 0, 0, 0.5),rgba(128, 128, 128, 0.7));
   bottom: 0;
   color: whitesmoke;
   font-size: 1.7vw;
@@ -270,7 +270,6 @@ main {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 0;
-  margin-bottom: 1vw;
   width: 100%;
 }
 
