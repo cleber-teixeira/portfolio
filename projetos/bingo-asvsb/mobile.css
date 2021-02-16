@@ -210,7 +210,7 @@ div.letra {
   border-radius: 15px;
   color: grey;
   display: flex;
-  font-size: 32vw;
+  font-size: 31vw;
   height: 18vw;
   justify-content: center;
   margin: 0 2vw;
@@ -226,7 +226,7 @@ div.sorteado {
   border-radius: 50%;
   color: gray;
   display: flex;
-  font-size: 28vw;
+  font-size: 25vw;
   height: 18vw;
   justify-content: center;
   margin: 0 2vw;

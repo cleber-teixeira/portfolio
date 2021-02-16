@@ -91,7 +91,7 @@ div.msg > .bingo {
   left: 13%;
   padding: 1vw 5vw;
   position: absolute;
-  top: 220%;
+  top: 300%;
   transform: rotate(315deg);
 }
 
@@ -212,7 +212,7 @@ div.letra {
   border-radius: 15px;
   color: grey;
   display: flex;
-  font-size: 22vw;
+  font-size: 20vw;
   height: 18vw;
   justify-content: center;
   margin: 0 2vw;
@@ -228,7 +228,7 @@ div.sorteado {
   border-radius: 50%;
   color: gray;
   display: flex;
-  font-size: 18vw;
+  font-size: 14vw;
   height: 18vw;
   justify-content: center;
   margin: 0 2vw;
