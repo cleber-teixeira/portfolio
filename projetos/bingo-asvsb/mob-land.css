@@ -7,25 +7,14 @@ a {
   color: white;
 }
 
-div.msg > .bingo {
-  border: 7px double;
-  color: rebeccapurple;
-  font-size: 5vw;
-  padding: 1vw 1vw;
-  position: absolute;
-  left: 67%;
-  top: 45%;
-  transform: rotate(315deg);
-}
-
 body {
   align-items: center;
   color: rgb(94, 94, 94);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   font-family: sans-serif;
   font-size: 1em;
+  justify-content: center;
   margin: 0;
 }
 
@@ -33,19 +22,33 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 60%;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 2%;
+  width: 100%;
 }
 
 .btn {
-  font-size: 14px;
-  height: 30px;
+  font-size: 2.8vw;
   letter-spacing: 1px;
-  width: 85px;
+  padding: 2px 2px;
 }
 
 .btn-eletronico {
   margin-bottom: 10px;
-  width: 180px;
+  width: 33vw;
+}
+
+#btn-ganhador {
+  width: 19vw;
+}
+
+#btn-premio {
+  width: 17vw;
+}
+
+#btn-valor {
+  width: 10vw;
 }
 
 .btn:hover {
@@ -57,35 +60,48 @@ body {
 
 .cartela {
   background-color: gainsboro;
-  border: 1px solid gray;
-  border-radius: 15px;
-  border-spacing: 15px 4px;
+  border: 2px solid gray;
+  border-radius: 3vw;
+  border-spacing: 3vw 1vw;
   margin: 0 auto;
-  padding: 15px 5px;
+  padding: 2vw;
+  width: 80%;
 }
 
 .conteudo-cartela {
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 100%;
 }
 
 .controls {
   align-items: center;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2vw;
   width: 100%;
 }
 
+div.msg > .bingo {
+  border: 7px double;
+  color: rebeccapurple;
+  font-size: 13vw;
+  left: 13%;
+  padding: 1vw 5vw;
+  position: absolute;
+  top: 200%;
+  transform: rotate(315deg);
+}
+
 footer {
-  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.3),rgba(0, 0, 0, 0.5),rgba(128, 128, 128, 0.3));
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.5),rgba(0, 0, 0, 0.5),rgba(128, 128, 128, 0.7));
   bottom: 0;
   color: whitesmoke;
-  font-size: 12px;
+  font-size: 1.7vw;
   height: 20px;
+  margin-top: 10px;
   padding: 4px 0 0;
   text-align: center;
   width: 100%;
@@ -102,19 +118,18 @@ footer:hover {
 }
 
 .ganhador {
-  font-size: 28px;
+  font-size: 4vw;
   font-weight: 600;
-  min-width: 260px;
   width: 100%;
 }
 
 .ganhador {
   /* Chrome, Safari, Opera */
   -webkit-animation: PULSE 2s infinite; 
-
+  
   /* Internet Explorer */
   -ms-animation: PULSE 2s infinite;
-
+  
   /* Standard Syntax */
   animation: PULSE 1.25s infinite; 
 }
@@ -138,10 +153,10 @@ footer:hover {
 }
 
 header {
+  align-items: center;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: absolute;
+  flex-direction: column;
+  justify-content: center;
   top: 0;
   width: 100%;
 }
@@ -152,27 +167,16 @@ header {
 }
 
 .infos {
-  display: flex;
-  height: 80px;
-  justify-content: flex-start;
-  margin-top: 10px;
-  width: 82%;
-}
-
-.infos h1 {
-  color: cadetblue;
-  font-family: 'Great Vibes';
-  font-size: 2.3em;
-  font-weight: lighter;
-  margin-top: 10px;
+  height: 20vw;
+  margin-top: 15vw;
+  width: 95vw;
 }
 
 .infos-table {
-  border-spacing: 10px 5px;
-  font-size: 16px;
+  border-spacing: 5px;
+  font-size: 3vw;
   text-align: center;
-  margin-left: -50px;
-  width: 55%;
+  width: 100%;
 }
 
 .infos-table td {
@@ -193,9 +197,9 @@ header {
 .input-bingo {
   border: 0.5px solid gray;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 3vw;
   letter-spacing: 1px;
-  height: 25px;
+  height: 4.5vw;
   margin-bottom: 10px;
   margin-left: 15px;
   text-align: center;
@@ -206,12 +210,12 @@ div.letra {
   align-items: center;
   border: 2px solid gray;
   border-radius: 15px;
-  bottom: 0;
   color: grey;
   display: flex;
   font-size: 18vw;
   height: 18vw;
   justify-content: center;
+  margin: 0 2vw;
   min-height: 150px;
   min-width: 150px;
   text-align: center;
@@ -222,12 +226,12 @@ div.sorteado {
   align-items: center;
   border: 2px solid gray;
   border-radius: 50%;
-  bottom: 0;
   color: gray;
   display: flex;
   font-size: 13vw;
   height: 18vw;
   justify-content: center;
+  margin: 0 2vw;
   min-height: 150px;
   min-width: 150px;
   width: 18vw;
@@ -246,26 +250,31 @@ div.sorteado {
 }
 
 .logo-bingo {
-  margin-top: 5%;
-  width: 75%;
+  left: 1vw;
+  position: absolute;
+  top: 1vw;
+  width: 14vw;
 }
 
 .logo-ong {
-  width: 60%;
+  right: 1vw;
+  position: absolute;
+  top: 1vw;
+  width: 12vw;
 }
 
 main {
+  align-items: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 0;
-  margin-bottom: 10px;
   width: 100%;
 }
 
 .menu {
   text-align: center;
-  width: 75%;
+  width: 100%;
 }
 
 .n {
@@ -278,15 +287,18 @@ main {
 }
 
 .nome {
-  width: 90%;
+  left: 16%;
+  position: absolute;
+  top: 3vw;
+  width: 70vw;
 }
 
 .num td{
   background-color: white;
   border: 1px solid grey;
-  font-size: 18px;
+  font-size: 4vw;
   font-weight: 600;
-  padding: 1px 10px;
+  padding: 0.3vw 0.5vw;
   text-align: center;
 }
 
@@ -312,28 +324,31 @@ main {
   align-items: center;
   display: flex;
   flex-direction: row;
-  height: 300px;
-  justify-content: space-evenly;
-  margin-top: 180px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 2vw;
   width: 100%;
 }
 
 .sorteando {
+  align-self: center;
+  border: 1px white;
   color: cadetblue;
   display: flex;
   font-size: 20px;
-  position: absolute;
-  top: 170px;
+  height: 20px;
+  top: 270px;
 }
 
 .title {
-  border: 1px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 50%;
-  font-size: 1.1vw;
+  font-size: 3vw;
   padding: 0;
-  height: 5vw;
+  height: 3vw;
+  line-height: 3vw;
   text-align: center;
-  width: 5vw;
+  width: 3vw;
 }
 
 .valor {
