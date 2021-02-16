@@ -1,4 +1,3 @@
-
 const zerarCartela = () => {
   const cartela = document.querySelectorAll('#cartela tr td');
   return cartela.forEach(element => element.classList.add('no'));
@@ -58,9 +57,12 @@ const aleatorio = () => {
     const letra = document.querySelector('#letra');
     const sorteando = document.querySelector('.sorteando');
     const img = document.createElement('img');
-    sorteado.innerHTML = '<img src="sorteando.png" alt="sorteando" class="roleta"></img>';
-    letra.innerText = '⏳';
-    sorteando.innerText = 'Sorteando';
+    img.src = 'sorteando.png';
+    img.style.width = '50%';
+    sorteado.innerText = '';
+    sorteado.appendChild(img);
+    letra.innerHTML = '<span style="font-size: 50%">⏳</span>';
+    sorteando.innerText = 'Sorteando o próximo número...';
     setTimeout(() => sorteando.innerText = '', 5000);
     setTimeout(() => sortear(), 5000);
   });
@@ -164,7 +166,12 @@ const msg = () => {
     h1.className = 'bingo';
     h1.innerText = 'BINGO !!!';
     div.appendChild(h1);
-    msg.appendChild(div);
+    const bingo = document.querySelector('.msg');
+    if (bingo === null) {
+      msg.appendChild(div);
+    } else {
+      msg.removeChild(bingo);
+    }
   });
 }
 
