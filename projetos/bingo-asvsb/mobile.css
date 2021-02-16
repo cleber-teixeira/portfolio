@@ -91,7 +91,7 @@ div.msg > .bingo {
   left: 13%;
   padding: 1vw 5vw;
   position: absolute;
-  top: 95%;
+  top: 115%;
   transform: rotate(315deg);
 }
 
@@ -100,9 +100,7 @@ footer {
   bottom: 0;
   color: whitesmoke;
   font-size: 1.7vw;
-  height: 20px;
-  margin-top: 10px;
-  padding: 4px 0 0;
+  padding: 4px 0;
   text-align: center;
   width: 100%;
 }
@@ -212,7 +210,7 @@ div.letra {
   border-radius: 15px;
   color: grey;
   display: flex;
-  font-size: 18vw;
+  font-size: 32vw;
   height: 18vw;
   justify-content: center;
   margin: 0 2vw;
@@ -228,7 +226,7 @@ div.sorteado {
   border-radius: 50%;
   color: gray;
   display: flex;
-  font-size: 13vw;
+  font-size: 28vw;
   height: 18vw;
   justify-content: center;
   margin: 0 2vw;
@@ -269,6 +267,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 0;
+  padding-bottom: 10px;
   width: 100%;
 }
 
@@ -325,8 +324,8 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 2vw;
+  margin-bottom: 10px;
+  padding: 0;
   width: 100%;
 }
 
