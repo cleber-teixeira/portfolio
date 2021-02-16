@@ -50,42 +50,6 @@ const sorteado = () => {
   });
 }
 
-const aleatorio = () => {
-  const btn = document.querySelector('#eletronico');
-  btn.addEventListener('click', () => {
-    const sorteado = document.querySelector('#sorteado');
-    const letra = document.querySelector('#letra');
-    const sorteando = document.querySelector('.sorteando');
-    const img = document.createElement('img');
-    img.src = 'sorteando.png';
-    img.style.width = '50%';
-    sorteado.innerText = '';
-    sorteado.appendChild(img);
-    letra.innerHTML = '<span style="font-size: 50%">⏳</span>';
-    sorteando.innerText = 'Sorteando o próximo número...';
-    setTimeout(() => sorteando.innerText = '', 5000);
-    setTimeout(() => sortear(), 5000);
-  });
-}
-
-const sortear = () => {
-  const cartela = document.querySelectorAll('#cartela tr td');
-  let bolinha = Math.round(Math.random() * 74 + 1);
-  if (bolinha < 10) {
-    bolinha = `0${bolinha}`;
-  }
-  cartela.forEach(element => {
-    if (element.innerText === `${bolinha}`) {
-      if (element.classList.contains('no')) {
-        element.classList.remove('no');
-        bingo(bolinha);
-      } else {
-        sortear();
-      }
-    }
-  });
-}
-
 const bingo = (parametro) => {
   const bolinha = parametro;
   const letra = document.querySelector('#letra');
@@ -109,6 +73,57 @@ const bingo = (parametro) => {
       letra.innerText = 'O';
       sorteado.innerText = bolinha;
     }
+}
+
+const sortear = () => {
+  const cartela = document.querySelectorAll('#cartela tr td');
+  let bolinha = Math.round(Math.random() * 74 + 1);
+  if (bolinha < 10) {
+    bolinha = `0${bolinha}`;
+  }
+  cartela.forEach(element => {
+    if (element.innerText === `${bolinha}`) {
+      if (element.classList.contains('no')) {
+        element.classList.remove('no');
+        bingo(bolinha);
+      } else {
+        sortear();
+      }
+    }
+  });
+}
+
+const misturar = () => {
+  const sorteado = document.querySelector('#sorteado');
+  const num = Math.round(Math.random() * 74 + 1);
+  sorteado.innerText = num;
+}
+
+const aleatorio = () => {
+  const btn = document.querySelector('#eletronico');
+  btn.addEventListener('click', () => {
+    const input = document.querySelector('#input-bingo');
+    const sorteado = document.querySelector('#sorteado');
+    const letra = document.querySelector('#letra');
+    const sorteando = document.querySelector('.sorteando');
+    const img = document.createElement('img');
+    let tempo;
+    if (input.value === '') {
+      tempo = 5000;
+    } else {
+      tempo = parseInt(input.value * 1000);
+    }
+    console.log(tempo);
+    img.src = 'sorteando.png';
+    img.style.width = '50%';
+    letra.innerText = '';
+    sorteando.innerText = 'Sorteando o próximo número...';
+    letra.appendChild(img);
+    setTimeout(() => sorteando.innerText = '', tempo);
+    let sorteio = setInterval(misturar, 200);
+    setTimeout(() => clearInterval(sorteio), tempo);
+    setTimeout(() => sortear(), tempo);
+  });
 }
 
 const limpar = () => {
