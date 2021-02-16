@@ -103,7 +103,7 @@ const aleatorio = () => {
   const btn = document.querySelector('#eletronico');
   btn.addEventListener('click', () => {
     const input = document.querySelector('#input-bingo');
-    const sorteado = document.querySelector('#sorteado');
+    // const sorteado = document.querySelector('#sorteado');
     const letra = document.querySelector('#letra');
     const sorteando = document.querySelector('.sorteando');
     const img = document.createElement('img');
@@ -115,7 +115,7 @@ const aleatorio = () => {
     }
     console.log(tempo);
     img.src = 'sorteando.png';
-    img.style.width = '50%';
+    img.style.width = '70%';
     letra.innerText = '';
     sorteando.innerText = 'Sorteando o próximo número...';
     letra.appendChild(img);
