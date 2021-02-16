@@ -142,9 +142,8 @@ const corrigir = () => {
     const cartela = document.querySelectorAll('#cartela tr td');
     let bolinha;
     console.log(typeof input.value);
-    if (parseInt(input.value) < 10) {
+    if (input.value.length === 1 && input.value !== '') {
       bolinha = `0${input.value}`;
-      // console.log(bolinha);
     } else {
       bolinha = input.value;
     }
