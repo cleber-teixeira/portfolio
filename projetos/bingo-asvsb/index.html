@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="style.css" media="screen and (min-width: 817px)">
   <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 816px)">
   <link rel="stylesheet" href="mob-land.css" media="screen and (max-width: 816px) and (orientation: landscape)">
-  <link rel="shortcut icon" href="ico.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
   <script src="script.js"></script>
   <title>Bingo A.S.V.S.B.</title>
 </head>
 <body>
   <header>
     <div id="logo" class="logo">
-      <img src="bingo.png" alt="bingo-marfisas" class="logo-bingo">
+      <img src="img/bingo.png" alt="bingo-marfisas" class="logo-bingo">
     </div>
     <div id="infos" class="infos">
       <table id="infos-table" class="infos-table">
@@ -45,29 +45,34 @@
       <div id="sorteio" class="sorteio">
         <div id="letra" class="letra"></div>
         <div id="sorteado" class="sorteado"><h1></h1></div>
+        <div id="cartelas-sorteadas" class="cartelas-sorteadas">
+          <span class="title-list">Cartelas Sorteadas:</span>
+          <ol id="list" class="list"></ol>
+        </div>
       </div>
       <div class="controls">
         <div id="menu" class="menu">
-          <button id="eletronico" class="btn-eletronico btn">
+          <button id="btn-sorteado" class="btn">Nº Sorteado</button>
+          <button id="eletronico" class="btn">
             Sorteio Eletrônico
           </button>
-          <button id="bingo" class="btn">BINGO</button>
-          <button id="btn-ganhador" class="btn">Ganhador</button><br/>
+          <button id="btn-cartela" class="btn">Sortear Cartela</button>
+          <button id="bingo" class="btn">BINGO</button><br/>
           <input type="text" id="input-bingo" class="input-bingo"><br/>
-          <button id="btn-sorteado" class="btn">Sorteado</button>
           <button id="btn-rodada" class="btn">Rodada</button>
           <button id="btn-valor" class="btn">Valor</button>
           <button id="btn-premio" class="btn">Prêmio(s)</button>
+          <button id="btn-ganhador" class="btn">Ganhador</button>
           <button id="btn-corrigir" class="btn">Corrigir</button>
           <button id="btn-limpar" class="btn">Limpar</button>
         </div>
         <div class="logo2">
-          <img src="asvsb.jpg" alt="bingo-marfisas" class="logo-ong">
+          <img src="img/asvsb.jpg" alt="bingo-marfisas" class="logo-ong">
         </div>
       </div>
     </section>
     <section id="conteudo-cartela" class="conteudo-cartela">
-      <img src="nome.png" alt="nome" class="nome">
+      <img src="img/nome.png" alt="nome" class="nome">
       <table id="cartela" class="cartela">
         <thead>
           <th class="title b"><h1>B</h1></th>

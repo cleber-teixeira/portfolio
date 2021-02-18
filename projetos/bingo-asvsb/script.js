@@ -10,6 +10,8 @@ const sorteado = () => {
     const cartela = document.querySelectorAll('#cartela tr td');
     const letra = document.querySelector('#letra');
     const sorteado = document.querySelector('#sorteado');
+    letra.style.fontSize = '13vw';
+    sorteado.style.fontSize = '12vw';
     let bolinha;
     if (input.value.length === 1 && input.value !== '') {
       bolinha = `0${input.value}`;
@@ -103,8 +105,8 @@ const aleatorio = () => {
   const btn = document.querySelector('#eletronico');
   btn.addEventListener('click', () => {
     const input = document.querySelector('#input-bingo');
-    // const sorteado = document.querySelector('#sorteado');
     const letra = document.querySelector('#letra');
+    const sorteado = document.querySelector('#sorteado');
     const sorteando = document.querySelector('.sorteando');
     const img = document.createElement('img');
     let tempo;
@@ -113,10 +115,11 @@ const aleatorio = () => {
     } else {
       tempo = parseInt(input.value * 1000);
     }
-    console.log(tempo);
-    img.src = 'sorteando.png';
+    img.src = 'img/sorteando.png';
     img.style.width = '70%';
     letra.innerText = '';
+    letra.style.fontSize = '13vw';
+    sorteado.style.fontSize = '12vw';
     sorteando.innerText = 'Sorteando o próximo número...';
     letra.appendChild(img);
     setTimeout(() => sorteando.innerText = '', tempo);
@@ -156,7 +159,6 @@ const corrigir = () => {
   btn.addEventListener('click', () => {
     const cartela = document.querySelectorAll('#cartela tr td');
     let bolinha;
-    console.log(typeof input.value);
     if (input.value.length === 1 && input.value !== '') {
       bolinha = `0${input.value}`;
     } else {
@@ -190,6 +192,69 @@ const msg = () => {
   });
 }
 
+const numeroDaCartela = () => {
+  const input = document.querySelector('#input-bingo');
+  const sorteado = document.querySelector('#sorteado');
+  sorteado.style.fontSize = '8vw';
+  if(!input.value) {
+    const num = Math.round(Math.random() * 74 + 1);
+    sorteado.innerText = num;
+  } else {
+    const num = Math.round(Math.random() * (input.value - 1) + 1);
+    sorteado.innerText = num;
+  }
+}
+
+const conferir = () => {
+  const numSorteado = document.querySelector('#sorteado').innerText;
+  const lista = document.querySelector('#list');
+  const linhas = document.querySelectorAll('li');
+  let sorteios = lista.childElementCount;
+  if (sorteios === 0) {
+      const li = document.createElement('li');
+      li.innerText = numSorteado;
+      lista.appendChild(li);
+      sessionStorage.setItem(`${sorteios}`, `${numSorteado}`);
+  } else {
+    let result = false;
+    for (let index = 0; index < sorteios; index += 1) {
+      if (numSorteado === linhas[index].innerText) {
+        result = true;
+      }
+    }
+    if (result) {
+      sortearCartela();
+    } else {
+      const li = document.createElement('li');
+      li.innerText = numSorteado;
+      lista.appendChild(li);
+      sessionStorage.setItem(`${sorteios}`, `${numSorteado}`);  
+    }
+  }
+}
+
+const sortearCartela = () => {
+  const sorteando = document.querySelector('.sorteando');
+  const letra = document.querySelector('#letra');
+  const img = document.createElement('img');
+  img.src = 'img/cartela.png';
+  img.style.width = '90%';
+  letra.innerText = '';
+  letra.style.fontSize = '3vw';
+  sorteando.innerText = 'Sorteando o número da cartela...';
+  letra.appendChild(img);
+  setTimeout(() => sorteando.innerText = '', 1000);
+  let sorteio = setInterval(numeroDaCartela, 200);
+  setTimeout(() => clearInterval(sorteio), 1000);
+  setTimeout(() => letra.innerText = 'Cartela Sorteada', 1000);
+  setTimeout(() => conferir(), 1000);
+}
+
+const cartela = () => {
+  const btn = document.querySelector('#btn-cartela');
+  btn.addEventListener('click', sortearCartela);
+}
+
 const rodada = () => botao('rodada');
 
 const valor = () => botao('valor');
@@ -197,6 +262,20 @@ const valor = () => botao('valor');
 const premio = () => botao('premio');
 
 const ganhador = () => botao('ganhador');
+
+const recuperar = () => {
+  const result = sessionStorage.length;
+  const list = document.querySelector('#list');
+  let cartela;
+  for (let index = 0; index < result; index += 1) {
+    cartela = sessionStorage.getItem(index);
+    if(cartela !== null) {
+      const li = document.createElement('li');
+      li.innerText = cartela;
+      list.appendChild(li);
+    }
+  }
+}
 
 window.onload = () => {
   zerarCartela();
@@ -209,4 +288,6 @@ window.onload = () => {
   ganhador();
   corrigir();
   msg();
+  cartela();
+  recuperar();
 };
