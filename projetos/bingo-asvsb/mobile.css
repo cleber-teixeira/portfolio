@@ -358,7 +358,9 @@ main {
 .cartelas-sorteadas {
   background-color: rgba(128, 128, 128, 0.2);
   border-radius: 10px;
-  height: 80%;
+  height: 20vw;
+  min-width: 168px;
+  min-height: 155px;
   margin: 0;
   padding: 10px;
   text-align: center;

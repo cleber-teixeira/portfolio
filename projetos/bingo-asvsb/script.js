@@ -243,11 +243,11 @@ const sortearCartela = () => {
   letra.style.fontSize = '3vw';
   sorteando.innerText = 'Sorteando o número da cartela...';
   letra.appendChild(img);
-  setTimeout(() => sorteando.innerText = '', 1000);
+  setTimeout(() => sorteando.innerText = '', 10000);
   let sorteio = setInterval(numeroDaCartela, 200);
-  setTimeout(() => clearInterval(sorteio), 1000);
-  setTimeout(() => letra.innerText = 'Cartela Sorteada', 1000);
-  setTimeout(() => conferir(), 1000);
+  setTimeout(() => clearInterval(sorteio), 10000);
+  setTimeout(() => letra.innerText = 'Cartela Sorteada', 10000);
+  setTimeout(() => conferir(), 10000);
 }
 
 const cartela = () => {
